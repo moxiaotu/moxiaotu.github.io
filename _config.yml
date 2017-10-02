@@ -56,9 +56,10 @@ exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'R
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM
+input: GFM
 
 RSS: false
 
 # Plugins
-plugins: [jekyll-paginate]
+#Plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
