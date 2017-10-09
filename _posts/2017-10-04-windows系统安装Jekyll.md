@@ -9,15 +9,37 @@ tags: jekyll														#博客标签
 
 > 写给一样的小白交流学习，大神请无视，有错误请联系指出.
 
-### Welcome
+# 下载Ruby
+下载地址
+[https://rubyinstaller.org/downloads](https://rubyinstaller.org/downloads)<br/>
+ruby2.3.3(x64)下载<br/>
+[https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe)
 ![图片](/assets/img/Jekyll安装001.jpg)
-.
 
-### So what is Jekyll, exactly?Permalink
+## ruby安装
+![图片](/assets/img/Jekyll安装002.jpg)
+![图片](/assets/img/Jekyll安装003.jpg)
+### 重点勾选添加到系统环境变量！！！
+![图片](/assets/img/Jekyll安装004.jpg)
+![图片](/assets/img/Jekyll安装005.jpg)
+### 之前没勾选添加到系统环境变量的现在手动添加<br/>
+安装路径<br/>
+```RUBY_HOME```
+当前安装的ruby目录为主 <br/>
+![图片](/assets/img/Jekyll安装006.jpg)
+```Path```<br/>
+```%RUBY_HOME%\bin```<br/>
+在path里面后面添加 %RUBY_HOME%\bin;
+![图片](/assets/img/Jekyll安装007.jpg)
+### 查看是否安装成功
+打开```cdm```命令行面板，输入```gem -v```，如果显示出了版本号，则说明安装成功。
+![图片](/assets/img/Jekyll安装008.jpg)
+![图片](/assets/img/Jekyll安装009.jpg)
 
-Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like [Markdown](https://daringfireball.net/projects/markdown/)) and our [Liquid](https://github.com/Shopify/liquid/wiki) renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+## devkit安装
 
-### Helpful HintsPermalink
 
-Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.
+
+
+
 
