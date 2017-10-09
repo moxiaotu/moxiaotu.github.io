@@ -14,7 +14,7 @@ nav:
 author: '毛兔子'
 nickname: '从前有只兔子'
 bio: 'java,旅行,摄影'
-avatar: 'assets/img/Headportrait.jpg'
+avatar: '/assets/img/Headportrait.jpg'
 
 # Search
 search: false
