@@ -3,7 +3,7 @@ title: '从前有只兔子'
 description: '很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: '从前有只兔子的博客,java,旅行,摄影'
 url: 'http://maojiyu.com' # your host
-baseurl: '/'
+baseurl: ''
 
 # Navigation links
 nav:
@@ -61,5 +61,5 @@ input: GFM
 RSS: false
 
 # Plugins
-#Plugins: [jekyll-paginate]
+# Plugins: [jekyll-paginate]
 gems: [jekyll-paginate]
