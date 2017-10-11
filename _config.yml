@@ -5,10 +5,12 @@ keyword: '从前有只兔子的博客,java,旅行,摄影'
 url: 'http://maojiyu.com' # your host
 baseurl: ''
 
-# Navigation links
+# Navigation links 配置导航栏
 nav:
-  home: '/'
-  tags: '/tags.html'
+  主页: '/'
+  旅行: '/travel.html'
+  摄影: '/photography.html'
+  教程: '/tags.html'
 
 # Author 配置博主信息
 author: '从前有只兔子'
@@ -16,25 +18,25 @@ nickname: '从前有只兔子'
 bio: 'java,旅行,摄影'
 avatar: '/assets/img/Headportrait.jpg'
 
-# Search
-search: false
+# Search 文章搜索
+search: true
 
-# Night mode
+# Night mode 夜间模式
 nightMode: true
 
-# Comments
+# Comments 第三方社交评论插件
 disqus: false
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-# Share
+# Share 第三方分享插件
 social-share: true
-social-share-items: ['wechat', 'weibo', 'github', 'tieba']
+social-share-items: ['wechat', 'weibo', 'github', 'tieba','twitter','douban']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
 
-# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
-postPatterns: 'circuitBoard'
+# 头图底纹 Post header background patterns (when the post no cover): circuitBoard 电路,overlappingCircles 圆环,food 啃打鸡,glamorous 钻石,ticTacToe 圈圈叉叉,seaOfClouds 云海
+postPatterns: 'seaOfClouds'
 
 # SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
