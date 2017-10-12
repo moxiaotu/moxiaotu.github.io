@@ -1,5 +1,5 @@
 ---
-layout: post 														# 指定使用的模板文件，“_layout” 目录下的模板文件名决定变量名
+layout: post 											# 指定使用的模板文件，“_layout” 目录下的模板文件名决定变量名
 title: 'windows系统安装Jekyll'										# 文章的标题
 date: 2017-10-04													# 覆盖文章名中的日期
 author: 教程														# 文章的类别
