@@ -58,7 +58,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 26px;
+  height: 35px;
   padding: 16px 0;
   background-color: transparent;
   transition: all .6s;
@@ -66,8 +66,8 @@ a {
   .g-header .g-logo {
     float: left;
     margin-left: 2%;
-    width: 60px;
-    height: 26px;
+    width: 40px;
+    height: 40px;
     background: url("../icons/logo.svg") no-repeat center;
     background-size: 100% 100%;
     opacity: .8;
@@ -103,10 +103,10 @@ a {
         margin-right: 0; }
       .g-header .g-nav > ul > li > a {
         display: inline-block;
-        font-size: 14px;
+        font-size: 18px;
         letter-spacing: 1px;
         color: #fff;
-        padding: 0 12px;
+        padding: 6px 12px;
         opacity: .7; }
         .g-header .g-nav > ul > li > a:hover {
           opacity: 1; }
