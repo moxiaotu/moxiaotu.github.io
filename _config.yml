@@ -25,12 +25,12 @@ search: true
 nightMode: true
 
 # Comments 第三方社交评论插件
-disqus: false
+disqus: true
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
 # Share 第三方分享插件
 social-share: true
-social-share-items: ['wechat', 'weibo', 'github', 'tieba','twitter','douban']
+social-share-items: ['wechat', 'qzone', 'weibo', 'douban','qq','tencent']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -41,9 +41,12 @@ postPatterns: 'seaOfClouds'
 # SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   weibo: '//weibo.com/3043141630'
-  tieba: '//tieba.baidu.com/'
-  zhihu: '//www.zhihu.com/'
+  juejin: '//juejin.im/user/59c1291ef265da065352d76c'
   github: '//github.com/moxiaotu'
+  zhihu: '//zhihu.com/people/cong-qian-you-zhi-tu-zi-68'
+  jianshu: '//www.jianshu.com/users/e693d76b51a7/timeline'
+
+# csdn: '//blog.csdn.net/maotuzi'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
