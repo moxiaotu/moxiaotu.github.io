@@ -1,28 +1,28 @@
 ---
-title: Tags
+title: Travel
 layout: default
 ---
 
 {% include header.html %}
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>TAGS</h2>
+    <h2>旅行</h2>
 </div>
 
 <main class="tags-content">
 
     <ul class="tags-list">
         <li>
-        {% if site.recommend-tags and site.tags.size>0 %}
-            {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+        {% if site.recommend-travel and site.travel.size>0 %}
+            {% for travel in site.travel %}
+            <a href="#{{ travel[0] }}" class="tag">{{ travel[0]}}</a>
             {% endfor %}
         {% endif %}
         </li>
-        {% for tag in site.tags %}
+        {% for travel in site.travel %}
         <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
-            {% for post in tag[1] %}
+            <span class="tag-name" id="{{ travel[0] }}">「{{ travel[0] }}」</span>
+            {% for post in travel[1] %}
             <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
