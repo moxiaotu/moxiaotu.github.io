@@ -1,35 +1,38 @@
 ---
-title: Tags
+title: Photography
 layout: default
 ---
 
 {% include header.html %}
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>TAGS</h2>
+    <h2>摄影</h2>
 </div>
 
-<main class="tags-content">
-
-    <ul class="tags-list">
-        <li>
-        {% if site.recommend-tags and site.tags.size>0 %}
-            {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        {% endif %}
-        </li>
-        {% for tag in site.tags %}
-        <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
-            {% for post in tag[1] %}
-            <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            {% endfor %}
-        </li>
-        
-        </div>
-        {% endfor%}
-    </ul>
-</main>
     
+<main class="text-container text-content">
+    <div class="text-list">
+        {% for post in site.categories.travel %}
+            <article class="text-item">
+                {% if post.cover %}
+                <div class="text-cover">
+                    <a class="text-link" href="{{ post.url }}" title="{{ post.title }}"></a>
+                    <img src="{{ post.cover }}" alt="">
+                </div>
+                {% endif %}
+                <section class="text-preview">
+                    <a class="text-link" href="{{ post.url }}" title="{{ post.title }}"></a>
+                    <h2 class="text-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 class="text-subtitle">{{ post.subtitle }}</h3>
+                    <time class="text-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                    {% endif %}
+                    {% if post.subtitle.size==0 or post.subtitle==nil %} 
+                    <p class="text-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                    {% endif %}
+                </section>
+            </article>
+        {% endfor %}
+    </div>
+</main>
 {% include footer.html %}

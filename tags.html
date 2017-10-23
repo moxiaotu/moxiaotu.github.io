@@ -12,23 +12,15 @@ layout: default
 <main class="tags-content">
 
     <ul class="tags-list">
-        <li>
-        {% if site.recommend-tags and site.categories.size>0 %}
-            {% for tag in site.categories %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        {% endif %}
-        </li>
-        {% for tag in site.categories %}
-        <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
-            {% for post in tag[1] %}
+        
+        {% for post in site.categories.tags %}
+           <li> 
             <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            {% endfor %}
-        </li>
+           </li>
+        {% endfor %}
         
         </div>
-        {% endfor%}
+        
     </ul>
 </main>
     

@@ -67,4 +67,5 @@ RSS: false
 
 # Plugins
 # Plugins: [jekyll-paginate]
-gems: [jekyll-paginate]
+# #gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
