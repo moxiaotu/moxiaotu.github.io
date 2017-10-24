@@ -15,9 +15,9 @@ layout: default
 
         {% for post in site.categories.travel %}
            <li style="padding: 25px 20px;"> 
-           	<h1 class="tag-post" style="font-size: 22px;margin-top: -10px;" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</h1>
+           	<a class="tag-post" style="font-size: 22px;margin-top: -10px;font-weight: bold;" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% if post.subtitle %}
-            <a class="text-subtitle" >{{ post.subtitle }}</a>
+            <a class="text-subtitle" href="{{ post.url }}">{{ post.subtitle }}</a>
             <br></br>
             <time class="text-date" style="float: right;" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
             {% endif %}
