@@ -11,11 +11,16 @@ layout: default
 
 <main class="tags-content">
 
-    <ul class="tags-list">
+    <ul class="tags-list" style="text-align: center;">
 
         {% for post in site.categories.travel %}
-           <li> 
-           	<a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+           <li style="padding: 25px 20px;"> 
+           	<h1 class="tag-post" style="margin-top: -10px;" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</h1>
+            {% if post.subtitle %}
+            <a class="text-subtitle" >{{ post.subtitle }}</a>
+            <br></br>
+            <time class="text-date" style="float: right;" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+            {% endif %}
            </li>
         {% endfor %}
         
