@@ -25,8 +25,8 @@ search: true
 nightMode: true
 
 # Comments 第三方社交评论插件
-disqus: true
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+disqus: false
+disqus_url: ''
 
 # Share 第三方分享插件
 social-share: true
