@@ -20,7 +20,7 @@
 .text-list .text-item {
 	float: left;
     width: 25%;
-    height: 250px;
+    height: 100%;
     margin-right: 2%;
     margin-bottom: 16px;
     padding: 0px 0px;
